@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, TextInput, View, Button, ScrollView, Modal, TouchableOpacity, Keyboard } from 'react-native';
 
-const Home = () => {
+
+export const Home = () => {
     const [titulo, setTitulo] = useState('');
     const [descripcion, setDescripcion] = useState('');
     const [tareas, setTareas] = useState([]);
@@ -105,7 +106,7 @@ const styles = StyleSheet.create({
     container: {
         backgroundColor:"rgba(239, 242, 221, 0.5)",
         flex: 1,
-        justifyContent: 'flex-start', // Cambiado de 'center' a 'flex-start'
+        justifyContent: 'flex-start', 
         alignItems: 'center',
         paddingHorizontal: 20,
         marginTop: 50
@@ -137,7 +138,7 @@ const styles = StyleSheet.create({
     tarjeta: {
         borderWidth: 1,
         borderColor: '#ccc',
-        borderRadius: 5,
+        borderRadius: 20,
         padding: 10,
         marginBottom: 10,
         flexGrow: 1, 
@@ -146,6 +147,7 @@ const styles = StyleSheet.create({
     titulo: {
         fontSize: 18,
         fontWeight: 'bold',
+        
     },
     descripcion: {
         marginBottom: 5,
@@ -199,4 +201,3 @@ const styles = StyleSheet.create({
     },
 });
 
-export default Home;

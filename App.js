@@ -1,8 +1,10 @@
 
-import { StyleSheet, Text, View } from 'react-native';
-import Home from './src/components/Home';
+import { StyleSheet, View } from 'react-native';
+import { Home } from './src/components/home';
+
 
 export default function App() {
+  
   return (
     <View style={styles.container}>
       <Home/>
