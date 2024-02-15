@@ -51,7 +51,7 @@ export const Home = () => {
             </View>
             <ScrollView
                 style={styles.listaTareas}
-                horizontal={true} // Hacer que el scroll sea horizontal
+                horizontal={true} 
                 contentContainerStyle={styles.listaTareasContent}
             >
                 {tareas.map((tarea, index) => (
